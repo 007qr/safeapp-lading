@@ -23,6 +23,13 @@
                 href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap"
                 rel="stylesheet"
         /></noscript>
+        <!-- Dissect Tracker -->
+        <script async src="https://assets.website.safeapi.app/dissect.js"></script>
+        <script async>
+          dissect('collector', 'wss://user-tracker-dev.safeapp.workers.dev');
+          dissect('auth', null);
+          dissect('send');
+        </script>
         <title>Solidjs Widgets</title>
     </head>
     <body>
@@ -30,6 +37,5 @@
         <div id="root"></div>
 
         <script src="/src/index.tsx" type="module"></script>
-        <script src="https://assets.website.safeapi.app/dissect.js"></script>
     </body>
 </html>
